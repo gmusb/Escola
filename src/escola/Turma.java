@@ -1,10 +1,10 @@
 
 package escola;
-
+import java.util.ArrayList;
 
 public class Turma {
     private String nomeTurma;
-    private Aluno[] aluno = new Aluno[0];
+    private ArrayList<Aluno> a= new ArrayList<Aluno>();
 
     public String getNomeTurma() {
         return nomeTurma;
@@ -14,16 +14,14 @@ public class Turma {
         this.nomeTurma = nomeTurma;
     }
 
-    public Aluno[] getAluno() {
-        return aluno;
+    public ArrayList<Aluno> getA() {
+        return a;
     }
 
-    public void setAluno(Aluno[] aluno) {
-        this.aluno = aluno;
+    public void setA(ArrayList<Aluno> a) {
+        this.a = a;
     }
-    
     public void ExibirAlunos(){
-        for(int i = 0; i < aluno.length; i++) 
-            System.out.printf("Turma: ", i, aluno[ i ]); 
+        System.out.println(a); 
     }
 }

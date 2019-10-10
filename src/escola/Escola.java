@@ -3,7 +3,7 @@ package escola;
 
 public class Escola {
     private String nome;
-    private Turma[] turma = new Turma[0];
+    private Turma[] turma;
 
     public String getNome() {
         return nome;
